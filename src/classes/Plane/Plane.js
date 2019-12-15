@@ -4,7 +4,7 @@ const Passenger = require('../Passenger');
 // Helpers
 const draw = require('./helpers/draw');
 const createModel = require('./helpers/createModel');
-const createSeatNumbers = require('./helpers/createSeatNumbers');
+const createTickets = require('./helpers/createTickets');
 const shuffle = require('../../helpers/shuffle');
 
 // const doDelay = require('../../helpers/doDelay');
@@ -19,7 +19,9 @@ class Plane {
     // Array of passengers on the plane
     this.passengers = [];
 
-    this.seatNumbers = shuffle(createSeatNumbers(this.rows, this.seatsPerRow));
+    this.ticketSnapshot = shuffle(createTickets(this.rows, this.seatsPerRow));
+
+    this.tickets = JSON.parse(JSON.stringify(this.ticketSnapshot));
 
     this.boardingPosition = [
       // X value, always zero
@@ -45,10 +47,9 @@ class Plane {
 
   get nextSeatNumber() {
     // No more seat numbers
-    if (!this.seatNumbers.length) return null;
+    if (!this.tickets.length) return null;
 
-    // TOOD: Add logic here
-    return this.seatNumbers.pop();
+    return this.tickets.pop();
   }
 
   /**
@@ -84,7 +85,7 @@ class Plane {
 
     // There's space for new passenger to board
     // AND there's still passengers to come
-    if (this.canNewPassengerBoard && this.seatNumbers.length) this.boardPassenger();
+    if (this.canNewPassengerBoard && this.tickets.length) this.boardPassenger();
   }
 
   draw() {

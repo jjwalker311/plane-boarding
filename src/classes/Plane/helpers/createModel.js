@@ -1,16 +1,5 @@
-function createRow(content, rows) {
+function createRow(rows, content) {
   return new Array(rows).fill(content);
-}
-
-function makeBlockOfSeats(rows, seatsPerRow) {
-  const blockOfSeats = [];
-
-  for (let i = 0; i < seatsPerRow; i += 1) {
-    const seats = createRow('(', rows);
-    blockOfSeats.push(seats);
-  }
-
-  return blockOfSeats;
 }
 
 function createModel(rows, seatsPerRow) {
@@ -25,18 +14,7 @@ function createModel(rows, seatsPerRow) {
   // F  (  (  (  (  (  (  (  (  (  (
   // _______________________________
 
-  const wall = createRow('_', rows);
-  const leftSeats = makeBlockOfSeats(rows, seatsPerRow);
-  const rightSeats = makeBlockOfSeats(rows, seatsPerRow);
-  const aisle = createRow('=', rows);
-
-  return [
-    wall,
-    ...leftSeats,
-    aisle,
-    ...rightSeats,
-    wall,
-  ];
+  return new Array(3 + (seatsPerRow * 2)).fill(createRow(rows * 2));
 }
 
 module.exports = createModel;

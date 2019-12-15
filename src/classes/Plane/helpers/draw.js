@@ -32,20 +32,26 @@ function draw(model, isPositionOccupied, isPassengerLoading) {
 
     const mappedRow = row.map((position, x) => {
       if (isWindow(y, model.length)) {
-        return '___';
+        return '__';
       }
 
       const occupied = isPositionOccupied(x, y);
       if (isAisle(y, model.length)) {
         if (occupied) {
-          return isPassengerLoading(x, y) ? 'Y==' : '==8';
+          return isPassengerLoading(x, y) ? 'Y=' : '=8';
         }
 
         // Aisle NOT occupied
-        return '===';
+        return '==';
       }
 
-      return occupied ? '(o ' : '(  ';
+      if (x % 2 === 0) {
+        // Evens mean chair
+        return occupied ? '(o' : '( ';
+      }
+
+      // Odds mean blank space
+      return '  ';
     });
 
     if (y === 0 || y === model.length - 1 || y === (seatsInRow + 1)) {

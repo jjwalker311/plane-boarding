@@ -1,0 +1,362 @@
+[
+    {
+      "x": 4,
+      "y": 3,
+      "seatNumber": "3C",
+      "windowSeat": false
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "seatNumber": "1C",
+      "windowSeat": false
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "seatNumber": "2A",
+      "windowSeat": true
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "seatNumber": "3A",
+      "windowSeat": true
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "seatNumber": "1B",
+      "windowSeat": false
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "seatNumber": "4E",
+      "windowSeat": false
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "seatNumber": "7B",
+      "windowSeat": false
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "seatNumber": "7E",
+      "windowSeat": false
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "seatNumber": "2C",
+      "windowSeat": false
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "seatNumber": "8A",
+      "windowSeat": true
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "seatNumber": "3B",
+      "windowSeat": false
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "seatNumber": "6D",
+      "windowSeat": false
+    },
+    {
+      "x": 16,
+      "y": 6,
+      "seatNumber": "9E",
+      "windowSeat": false
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "seatNumber": "5C",
+      "windowSeat": false
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "seatNumber": "5B",
+      "windowSeat": false
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "seatNumber": "4D",
+      "windowSeat": false
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "seatNumber": "3D",
+      "windowSeat": false
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "seatNumber": "8E",
+      "windowSeat": false
+    },
+    {
+      "x": 16,
+      "y": 5,
+      "seatNumber": "9D",
+      "windowSeat": false
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "seatNumber": "7A",
+      "windowSeat": true
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "seatNumber": "7D",
+      "windowSeat": false
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "seatNumber": "8B",
+      "windowSeat": false
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "seatNumber": "8F",
+      "windowSeat": true
+    },
+    {
+      "x": 18,
+      "y": 7,
+      "seatNumber": "10F",
+      "windowSeat": true
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "seatNumber": "1D",
+      "windowSeat": false
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "seatNumber": "2D",
+      "windowSeat": false
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "seatNumber": "1E",
+      "windowSeat": false
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "seatNumber": "4C",
+      "windowSeat": false
+    },
+    {
+      "x": 18,
+      "y": 2,
+      "seatNumber": "10B",
+      "windowSeat": false
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "seatNumber": "5E",
+      "windowSeat": false
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "seatNumber": "1F",
+      "windowSeat": true
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "seatNumber": "6F",
+      "windowSeat": true
+    },
+    {
+      "x": 16,
+      "y": 3,
+      "seatNumber": "9C",
+      "windowSeat": false
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "seatNumber": "9F",
+      "windowSeat": true
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "seatNumber": "8D",
+      "windowSeat": false
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "seatNumber": "4B",
+      "windowSeat": false
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "seatNumber": "2E",
+      "windowSeat": false
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "seatNumber": "5F",
+      "windowSeat": true
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "seatNumber": "9B",
+      "windowSeat": false
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "seatNumber": "6B",
+      "windowSeat": false
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "seatNumber": "5A",
+      "windowSeat": true
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "seatNumber": "2B",
+      "windowSeat": false
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "seatNumber": "4F",
+      "windowSeat": true
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "seatNumber": "4A",
+      "windowSeat": true
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "seatNumber": "8C",
+      "windowSeat": false
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "seatNumber": "6C",
+      "windowSeat": false
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "seatNumber": "5D",
+      "windowSeat": false
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "seatNumber": "9A",
+      "windowSeat": true
+    },
+    {
+      "x": 18,
+      "y": 1,
+      "seatNumber": "10A",
+      "windowSeat": true
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "seatNumber": "3F",
+      "windowSeat": true
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "seatNumber": "7F",
+      "windowSeat": true
+    },
+    {
+      "x": 18,
+      "y": 5,
+      "seatNumber": "10D",
+      "windowSeat": false
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "seatNumber": "6E",
+      "windowSeat": false
+    },
+    {
+      "x": 18,
+      "y": 6,
+      "seatNumber": "10E",
+      "windowSeat": false
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "seatNumber": "1A",
+      "windowSeat": true
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "seatNumber": "7C",
+      "windowSeat": false
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "seatNumber": "2F",
+      "windowSeat": true
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "seatNumber": "6A",
+      "windowSeat": true
+    },
+    {
+      "x": 18,
+      "y": 3,
+      "seatNumber": "10C",
+      "windowSeat": false
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "seatNumber": "3E",
+      "windowSeat": false
+    }
+  ]

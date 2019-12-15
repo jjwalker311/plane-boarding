@@ -12,7 +12,11 @@ class Passenger {
     this.isLoadingLuggage = false;
 
     // TODO: make this dynamic for how many people to slip past
-    this.slippingPastSomeone = false;
+    this.slippingPastSomeone = -1;
+  }
+
+  get windowSeat() {
+    return !!this.ticket.windowSeat;
   }
 
   move(isPositionOccupied) {
@@ -40,32 +44,39 @@ class Passenger {
       // If we're gotten to this stage, luggage is loaded
       this.isLoadingLuggage = false;
 
-      if (this.slippingPastSomeone) {
-        // We're slipping past someone..
-        this.slippingPastSomeone = false;
-
-        // Slip to seat
+      if (this.slippingPastSomeone === 0) {
+        // We have slipped passed someone, go to seat
         this.y = this.ticket.y;
 
         this.inSeat = true;
-      } else {
-        // No one blocking us...
-        const turnLeft = this.y > this.ticket.y;
 
-        const nearestSeatInRightDirection = this.y + (turnLeft ? -1 : 1);
-        // Is someone in the next seat?
-        if (!isPositionOccupied(this.ticket.x, nearestSeatInRightDirection)) {
-          // Nope, let's move to it
-          this.y = nearestSeatInRightDirection;
+        return;
+      }
 
-          if (this.y === this.ticket.y) {
-            // Hoorah, we're in our seat
-            this.inSeat = true;
-          }
-        } else {
-          // There's someone in the way to my seat
-          this.slippingPastSomeone = true;
+      if (this.slippingPastSomeone > 0) {
+        // We ARE slipping passed someone
+        this.slippingPastSomeone -= 1;
+
+        return;
+      }
+
+      // No one blocking us...
+      const turnLeft = this.y > this.ticket.y;
+
+      const nearestSeatInRightDirection = this.y + (turnLeft ? -1 : 1);
+      // Is someone in the next seat?
+      if (!isPositionOccupied(this.ticket.x, nearestSeatInRightDirection)) {
+        // Nope, let's move to it
+        this.y = nearestSeatInRightDirection;
+
+        if (this.y === this.ticket.y) {
+          // Hoorah, we're in our seat
+          this.inSeat = true;
         }
+      } else {
+        // There's someone in the way to my seat
+        // Window seat takes twice as long
+        this.slippingPastSomeone = this.windowSeat ? 4 : 2;
       }
     }
   }
