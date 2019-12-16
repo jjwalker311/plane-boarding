@@ -78,6 +78,7 @@ class Plane {
 
   action() {
     // Move all passengers forward
+    // eslint-disable-next-line no-restricted-syntax
     for (const passenger of this.passengers) {
       // Move each passenger
       passenger.move(this.isPositionOccupied);

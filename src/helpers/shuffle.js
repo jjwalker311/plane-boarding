@@ -1,3 +1,10 @@
+/* eslint-disable no-param-reassign */
+
+/**
+ * Takes arrays and shuffles it
+ * @param  {Array} myArray
+ * @returns {Array}
+ */
 function shuffle(myArray) {
   let currentIndex = myArray.length; let temporaryValue; let
     randomIndex;

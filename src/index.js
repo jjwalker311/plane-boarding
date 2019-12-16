@@ -1,3 +1,4 @@
+/* eslint-disable no-console, no-await-in-loop */
 const Plane = require('./classes/Plane');
 const doDelay = require('./helpers/doDelay');
 
@@ -46,7 +47,7 @@ async function boardPlane() {
 
 async function testSuite() {
   for (let i = 0; i < TESTS_TO_RUN; i += 1) {
-    const [value, tickets] = await board();
+    const [value, tickets] = await boardPlane();
 
     if (!minValue) {
       minValue = value;
